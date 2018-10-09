@@ -102,7 +102,8 @@ app.post('/users', (req, res, next) => {
 		[user.first, user.last, user.email, user.birth, user.sex, user.phone, user.address, user.password],
 		 (err, rows, fields)=>{
 			if(!err){
-				res.send('New User created with id: '+rows.insertId);
+				user.id = rows.insertId;
+				res.send(user);
 			}else{
 				console.log(err);
 				res.statusCode = 500;
