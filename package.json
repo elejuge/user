@@ -1,0 +1,16 @@
+{
+  "name": "user",
+  "version": "1.0.0",
+  "description": "User CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Edouard le Juge",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
